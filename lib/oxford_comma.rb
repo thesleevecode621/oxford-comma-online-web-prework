@@ -4,10 +4,10 @@ def oxford_comma(array)
 
 
  end 
- else array.length == 2
+ elsif  array.length == 2
    return array.join(" and " )
 
-  else array.length == 3
+  elsif array.length == 3
    remove = array.pop
    array.join(", ").to_s << (", and #{remove}")
  else

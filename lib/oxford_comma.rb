@@ -6,7 +6,7 @@ def oxford_comma(array)
  end 	 elsif array.length == 2
    return array.join(" and " )
 
-  elsif array.length == 3
+  else array.length == 3
    remove = array.pop
    array.join(", ").to_s << (", and #{remove}")
  else
